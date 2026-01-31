@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap');
+
+:root {
+    --premium-emerald: #059669;
+    --premium-dark: #0f172a;
+    --premium-slate: #1e293b;
+    --premium-gold: #fbbf24;
+    --glass-bg: rgba(255, 255, 255, 0.7);
+    --glass-border: rgba(255, 255, 255, 0.2);
+    --glass-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+body {
+    font-family: 'Outfit', sans-serif !important;
+    background-color: #f8fafc;
+    color: var(--premium-dark);
+}
+
+/* Glassmorphism Navbar */
+.navbar {
+    background: var(--glass-bg) !important;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--glass-border);
+    padding: 1rem 2rem !important;
+    transition: all 0.3s ease;
+}
+
+.navbar.sticky-top {
+    box-shadow: var(--glass-shadow);
+}
+
+.navbar-brand h2 {
+    font-weight: 800;
+    letter-spacing: -1px;
+    background: linear-gradient(135deg, var(--premium-emerald), #10b981);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Premium Buttons */
+.btn-primary {
+    background: linear-gradient(135deg, var(--premium-emerald), #10b981) !important;
+    border: none !important;
+    box-shadow: 0 4px 14px 0 rgba(16, 185, 129, 0.39);
+    transition: all 0.3s ease !important;
+    font-weight: 600 !important;
+    padding: 12px 28px !important;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(16, 185, 129, 0.45);
+}
+
+/* Luxury Cards */
+.service-item, .portfolio-item, .team-item {
+    background: white;
+    border-radius: 24px !important;
+    overflow: hidden;
+    border: 1px solid #f1f5f9;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.service-item:hover, .portfolio-item:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Animations */
+.wow {
+    visibility: hidden;
+}
+
+/* Hero Section Enhancement */
+.owl-carousel-inner {
+    background: linear-gradient(to right, rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.3)) !important;
+}
+
+.display-2 {
+    font-weight: 800 !important;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+}
+
+/* SVG Logo Styling */
+#premium-logo {
+    width: 45px;
+    height: 45px;
+    margin-right: 12px;
+}
