@@ -32,4 +32,4 @@
 This project is licensed under a commercial license. All custom branding and premium styling are proprietary to Solartec Global.
 
 ---
-*Created with ❤️ by the Solartec Global Team.*
+*Designed & Made with ❤️ by MUKHTAR.*
